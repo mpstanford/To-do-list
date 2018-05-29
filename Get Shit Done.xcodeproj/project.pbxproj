@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28ED0E264C159DC558FADF85 /* Pods_Get_Shit_Done.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292C76F4D31C179F509A9E4 /* Pods_Get_Shit_Done.framework */; };
 		7A026A7E209BD7D200479E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A026A7D209BD7D200479E65 /* AppDelegate.swift */; };
 		7A026A80209BD7D200479E65 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A026A7F209BD7D200479E65 /* TodoListViewController.swift */; };
 		7A026A83209BD7D200479E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A81209BD7D200479E65 /* Main.storyboard */; };
 		7A026A85209BD7D500479E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A84209BD7D500479E65 /* Assets.xcassets */; };
 		7A026A88209BD7D500479E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A86209BD7D500479E65 /* LaunchScreen.storyboard */; };
-		7A026A90209BDFAC00479E65 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A026A8F209BDFAC00479E65 /* Item.swift */; };
 		7A026ABD20A14ED800479E65 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A026ABB20A14ED800479E65 /* DataModel.xcdatamodeld */; };
+		7A6A357120AD7F0400559BA4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A357020AD7F0400559BA4 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3292C76F4D31C179F509A9E4 /* Pods_Get_Shit_Done.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_Shit_Done.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531E7FF44977F7BABF4E22BB /* Pods-Get Shit Done.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Shit Done.release.xcconfig"; path = "Pods/Target Support Files/Pods-Get Shit Done/Pods-Get Shit Done.release.xcconfig"; sourceTree = "<group>"; };
 		7A026A7A209BD7D200479E65 /* Get Shit Done.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Shit Done.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A026A7D209BD7D200479E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A026A7F209BD7D200479E65 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +27,9 @@
 		7A026A84209BD7D500479E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A026A87209BD7D500479E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A026A89209BD7D500479E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A026A8F209BDFAC00479E65 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7A026ABC20A14ED800479E65 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		7A6A357020AD7F0400559BA4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		8464F08CF7C86E3240352592 /* Pods-Get Shit Done.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Shit Done.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Shit Done/Pods-Get Shit Done.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ED0E264C159DC558FADF85 /* Pods_Get_Shit_Done.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C7CE2524248F269BD81FEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3292C76F4D31C179F509A9E4 /* Pods_Get_Shit_Done.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A026A71209BD7D200479E65 = {
 			isa = PBXGroup;
 			children = (
 				7A026A7C209BD7D200479E65 /* Get Shit Done */,
 				7A026A7B209BD7D200479E65 /* Products */,
+				98B0338FCF848EE35EE8E8C2 /* Pods */,
+				12C7CE2524248F269BD81FEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,7 @@
 		7A026AB420A14CA600479E65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7A6A357020AD7F0400559BA4 /* CategoryViewController.swift */,
 				7A026A7F209BD7D200479E65 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -87,7 +103,6 @@
 		7A026AB620A14CB400479E65 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A026A8F209BDFAC00479E65 /* Item.swift */,
 				7A026ABB20A14ED800479E65 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
@@ -102,6 +117,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		98B0338FCF848EE35EE8E8C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8464F08CF7C86E3240352592 /* Pods-Get Shit Done.debug.xcconfig */,
+				531E7FF44977F7BABF4E22BB /* Pods-Get Shit Done.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A026A8C209BD7D500479E65 /* Build configuration list for PBXNativeTarget "Get Shit Done" */;
 			buildPhases = (
+				9BADD446533403F0ABD4A193 /* [CP] Check Pods Manifest.lock */,
 				7A026A76209BD7D200479E65 /* Sources */,
 				7A026A77209BD7D200479E65 /* Frameworks */,
 				7A026A78209BD7D200479E65 /* Resources */,
+				67C29DB7A1877ABE93676917 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,14 +194,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67C29DB7A1877ABE93676917 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Get Shit Done/Pods-Get Shit Done-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Get Shit Done/Pods-Get Shit Done-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BADD446533403F0ABD4A193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Get Shit Done-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A026A76209BD7D200479E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6A357120AD7F0400559BA4 /* CategoryViewController.swift in Sources */,
 				7A026A80209BD7D200479E65 /* TodoListViewController.swift in Sources */,
 				7A026ABD20A14ED800479E65 /* DataModel.xcdatamodeld in Sources */,
-				7A026A90209BDFAC00479E65 /* Item.swift in Sources */,
 				7A026A7E209BD7D200479E65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,15 +385,13 @@
 		};
 		7A026A8D209BD7D500479E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8464F08CF7C86E3240352592 /* Pods-Get Shit Done.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF6SY5Q53R;
 				INFOPLIST_FILE = "Get Shit Done/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madisonstanfordgeromel.Get-Shit-Done";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -336,15 +401,13 @@
 		};
 		7A026A8E209BD7D500479E65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531E7FF44977F7BABF4E22BB /* Pods-Get Shit Done.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF6SY5Q53R;
 				INFOPLIST_FILE = "Get Shit Done/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madisonstanfordgeromel.Get-Shit-Done";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
