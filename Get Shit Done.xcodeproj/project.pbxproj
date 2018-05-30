@@ -13,7 +13,8 @@
 		7A026A83209BD7D200479E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A81209BD7D200479E65 /* Main.storyboard */; };
 		7A026A85209BD7D500479E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A84209BD7D500479E65 /* Assets.xcassets */; };
 		7A026A88209BD7D500479E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A026A86209BD7D500479E65 /* LaunchScreen.storyboard */; };
-		7A026ABD20A14ED800479E65 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A026ABB20A14ED800479E65 /* DataModel.xcdatamodeld */; };
+		7A459FF920BD20B200AA63FA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A459FF820BD20B200AA63FA /* Item.swift */; };
+		7A459FFB20BD20BC00AA63FA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A459FFA20BD20BC00AA63FA /* Category.swift */; };
 		7A6A357120AD7F0400559BA4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A357020AD7F0400559BA4 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,8 @@
 		7A026A84209BD7D500479E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A026A87209BD7D500479E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A026A89209BD7D500479E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A026ABC20A14ED800479E65 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		7A459FF820BD20B200AA63FA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A459FFA20BD20BC00AA63FA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7A6A357020AD7F0400559BA4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8464F08CF7C86E3240352592 /* Pods-Get Shit Done.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Shit Done.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Shit Done/Pods-Get Shit Done.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +105,8 @@
 		7A026AB620A14CB400479E65 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A026ABB20A14ED800479E65 /* DataModel.xcdatamodeld */,
+				7A459FFA20BD20BC00AA63FA /* Category.swift */,
+				7A459FF820BD20B200AA63FA /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A459FF920BD20B200AA63FA /* Item.swift in Sources */,
 				7A6A357120AD7F0400559BA4 /* CategoryViewController.swift in Sources */,
 				7A026A80209BD7D200479E65 /* TodoListViewController.swift in Sources */,
-				7A026ABD20A14ED800479E65 /* DataModel.xcdatamodeld in Sources */,
 				7A026A7E209BD7D200479E65 /* AppDelegate.swift in Sources */,
+				7A459FFB20BD20BC00AA63FA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +395,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF6SY5Q53R;
 				INFOPLIST_FILE = "Get Shit Done/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madisonstanfordgeromel.Get-Shit-Done";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -407,7 +414,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF6SY5Q53R;
 				INFOPLIST_FILE = "Get Shit Done/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madisonstanfordgeromel.Get-Shit-Done";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -437,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7A026ABB20A14ED800479E65 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7A026ABC20A14ED800479E65 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 7A026ABC20A14ED800479E65 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7A026A72209BD7D200479E65 /* Project object */;
 }
